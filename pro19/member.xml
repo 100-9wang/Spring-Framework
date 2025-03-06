@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "./mybatis-3-config.dtd">
+<beans>
+	<bean id ="memberService" class="com.spring.ex03.MemberServiceImpl">
+		<property name ="memberDAO" ref="memberDAO"/>
+	</bean>
+	<bean id = "memberDAO" class="com.spring.ex03.MemberDAOImpl"/>
+</beans>
